@@ -11,8 +11,8 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <div className="row">
-          <PlayList />
           <PlayListForm />
+          <PlayList />
         </div>
       </div>
     );

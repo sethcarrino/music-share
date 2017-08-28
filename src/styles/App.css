@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+/***********
+Main Styling
+************/
+
+body{
+  font-family: 'Fjalla One';
+  background-image: url('../bg.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #433431;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+/***********
+App Styling
+************/
+
 .App {
   text-align: center;
 }
@@ -21,4 +46,57 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+
+/***********
+Title Styling
+************/
+
+.title {
+  font-family: 'Pacifico';
+  font-size: 60px;
+}
+
+.title-bg {
+  background-color: transparent;
+}
+
+/***********
+Song Card Styling
+#e2d5ad
+************/
+
+.song-card {
+  color: #61dafb;
+  text-align: left;
+  font-size: 20px;
+  background-color: transparent;
+  border-color: #e2d5ad;
+  padding: 1em 2em;
+}
+
+.desc {
+  color: white;
+}
+
+/***********
+Button Styling
+************/
+
+.btn {
+  font-family: 'Pacifico';
+  color: #fffafa;
+  background-color: #ea536e;
+  font-size: 20px;
+  padding: .5em 1em;
+  cursor: pointer;
+}
+
+.update-btn {
+  margin-bottom: 1em;
+}
+
+.submit-btn {
+  margin-top: 1em;
 }

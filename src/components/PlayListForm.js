@@ -69,45 +69,54 @@ class PlayListForm extends Component {
   // render jsx
   render() {
     return (
-      <form>
-        <div>
+      <form className="col-md-6">
+        <div className="form-group">
           <label htmlFor="userName">User Name: </label>
           <input
             type="text"
             name="userName"
             onChange={this.handleUserName}
             value={this.state.userName}
+            className="form-control"
+            placeholder="Name or Username"
           />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="songArtist">Artist/Band: </label>
           <input
             type="text"
             name="songArtist"
             onChange={this.handleSongArtist}
             value={this.state.songArtist}
+            className="form-control"
+            placeholder="Artist or Band Name"
           />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="songTitle">Song Title: </label>
           <input
             type="text"
             name="songTitle"
             onChange={this.handleSongTitle}
             value={this.state.songTitle}
+            className="form-control"
+            placeholder="Song Title"
           />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="songNotes">Notes about Song: </label>
           <input
             type="text"
             name="songNotes"
             onChange={this.handleSongNotes}
             value={this.state.songNotes}
+            className="form-control"
           />
         </div>
-        <div>
-          <input type="submit" value="Submit" onClick={this.addToList} />
+        <div className="form-group">
+          <button type="submit" className="btn submit-btn form-control" onClick={this.addToList} >
+            Submit
+          </button>
         </div>
       </form>
     );

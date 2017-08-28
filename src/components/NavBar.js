@@ -4,9 +4,9 @@ import logo from '../logo.svg';
 class NavBar extends Component {
   render() {
     return (
-      <div className="jumbotron">
+      <div className="jumbotron title-bg">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Play Wha?!</h2>
+          <h2 className="title">React Music Share</h2>
       </div>
     );
   }
